@@ -1,6 +1,24 @@
-<?php
-$name = $_GET["name"];
-$surname = $_GET["surname"];
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="saluta.php" method="GET">
+            <input type="text" name="text">
+            <!-- <input type="text" name="surname"> -->
+           
+            <button type="submit"> invia </button>
+            
+        </form>
 
-<h1>Ciao mi chiamo <?php echo $name; ?> </h1>
+        
+
+
+    </main>
+</body>
+</html>
+
