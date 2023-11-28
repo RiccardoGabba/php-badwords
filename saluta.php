@@ -1,5 +1,6 @@
 <?php
 $text = $_GET["text"];
+$ban = $_GET["ban"];
 
 ?>
 
@@ -11,15 +12,12 @@ $text = $_GET["text"];
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1> Inserisci testo </h1>
-        <p><?php echo "$text"; ?></p>
-
-        <form action="cancella" method="GET">
-            <input type="text">
-            <button type="submit">Cancella</button>
-        </form>
-
-    </header>
+ 
+    <h1>testo inserito:<?php  echo " $text"; ?></h1>
+    <h1>parola bannata:<?php  echo " $ban"; ?></h1>
+    <?php $banned = str_replace ($ban,"***",$text ); ?>
+    <h1>risultato finale: <?php  echo "$banned"; ?></h1>
+    
+    
 </body>
 </html>

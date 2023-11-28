@@ -8,11 +8,9 @@
 <body>
     <main>
         <form action="saluta.php" method="GET">
-            <input type="text" name="text">
-            <!-- <input type="text" name="surname"> -->
-           
+            <input type="text" name="text">  
+            <input type="text" name="ban">
             <button type="submit"> invia </button>
-            
         </form>
 
         
